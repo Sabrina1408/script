@@ -7,27 +7,35 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        @page { size: A4; margin: 10mm; }
+        @page { size: A4; margin: 8mm; }
         body {
             font-family: 'Inter', sans-serif;
             background-color: #ffffff;
             color: #000000;
             -webkit-print-color-adjust: exact;
-            font-size: 12px;
-            line-height: 1.2;
+            font-size: 11px;
+            line-height: 1.15;
         }
         .section-number { display: none; }
         .border-gray-custom { border-color: #d1d5db; }
         .muted { color: #6b7280; }
         .keyword { font-weight: 700; color: #000; }
         .no-radius { border-radius: 0 !important; box-shadow: none !important; }
-        .fit-a4 { max-width: 210mm; width: 100%; padding: 12px; }
-        h1 { font-size: 20px; }
-        h2 { font-size: 12px; }
+        .fit-a4 { max-width: 210mm; width: 100%; padding: 8px; }
+        h1 { font-size: 18px; }
+        h2 { font-size: 11px; }
+        .sep { display: inline-block; margin: 0 6px; color: #6b7280; }
+        .date { font-size: 10px; color: #6b7280; }
+        ul.list-disc li { margin-bottom: 4px; }
+        p { margin-bottom: 6px; }
         @media print {
-            body { font-size: 10px; }
+            body { font-size: 10px; line-height: 1.08; }
             h1 { font-size: 16pt; }
             h2 { font-size: 10pt; }
+            .sep { display: inline !important; }
+            .date { font-size: 9px; }
+            .fit-a4 { padding: 6px; }
+            ul.list-disc li { margin-bottom: 2px; }
         }
     </style>
 </head>
@@ -38,18 +46,13 @@
         <!-- Header -->
         <header class="mb-8 text-center">
             <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-black mb-1 uppercase text-center">SABRINA ALVES BRITO</h1>
-            <p class="text-base muted italic mb-4 text-center">Desenvolvedora Back-End</p>
+            <p class="text-base muted italic mb-4 text-center">Estagiária de Qualidade</p>
 
-            <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm muted border-b border-gray-custom py-3">
-                <span class="hidden md:inline"></span>
-                <a href="mailto:sabrina.a.brito@gmail.com" class="muted">sabrina.a.brito@gmail.com</a>
-                <span class="hidden md:inline">|</span>
-                <a href="https://www.linkedin.com/in/sabrina-a-brito" class="muted">linkedin.com/in/sabrina-a-brito</a>
-                <span class="hidden md:inline">|</span>
-                <a href="https://github.com/Sabrina1408" class="muted">github.com/Sabrina1408</a>
-                <span class="hidden md:inline">|</span>
+            <div class="flex flex-wrap justify-center gap-x-2 gap-y-2 text-sm muted border-b border-gray-custom py-2">
+                <a href="mailto:sabrina.a.brito@gmail.com" class="muted">sabrina.a.brito@gmail.com</a><span class="sep" aria-hidden="true">|</span>
+                <a href="https://www.linkedin.com/in/sabrina-a-brito" class="muted">linkedin.com/in/sabrina-a-brito</a><span class="sep" aria-hidden="true">|</span>
+                <a href="https://github.com/Sabrina1408" class="muted">github.com/Sabrina1408</a><span class="sep" aria-hidden="true">|</span>
                 <a href="https://sabrinaalvesbrito.com.br" class="muted">sabrinaalvesbrito.com.br</a>
-                <span class="hidden md:inline"></span>
             </div>
         </header>
 
@@ -58,7 +61,7 @@
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">RESUMO PROFISSIONAL</h2>
             <div class="text-gray-700 leading-relaxed space-y-4">
                 <p>
-                    <strong>Desenvolvedora Back-End</strong> com mais de 5 meses de experiência prática em desenvolvimento de sistemas, automação e operações. Atuação com <strong>Java</strong> (Quarkus), <strong>APIs REST</strong>, bancos de dados SQL, MongoDB e automação de processos. Contribuí para projetos com desenvolvimento além de implementar testes automatizados e melhorias documentação que elevaram a estabilidade do time.
+                    Estudante de Ciência da Computação e <strong>Estagiária de Qualidade</strong> com foco em garantia de qualidade de plataformas e transição para desenvolvimento <strong>Back‑End</strong> (estudo de Java, Spring, Quarkus e Node.js). Experiência prática em criação e execução de <strong>testes manuais</strong> e <strong>testes automatizados</strong>, documentação de regras de negócio, suporte a pipelines de dados e validação de integrações. Busco oportunidades para aplicar práticas de automação de testes, integração contínua e desenvolvimento de APIs com foco na estabilidade e qualidade da plataforma.
                 </p>
             </div>
         </section>
@@ -68,9 +71,9 @@
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">COMPETÊNCIAS TÉCNICAS</h2>
             <div class="text-left space-y-2 text-gray-700">
                 <p><span class="keyword">AI e Dados:</span> RAG (Retrieval-Augmented Generation), Python, Power BI, SQL, ETL, Prompt Engineering</p>
-                <p><span class="keyword">Linguagens e Frameworks:</span> Java, Spring Boot, Quarkus, Hibernate, Node.js, Express, TypeScript, REST APIs, JPA, </p>
+                <p><span class="keyword">Linguagens e Frameworks:</span> Java, Spring Boot, Quarkus, Hibernate, Node.js, Express, TypeScript, REST APIs, JPA</p>
                 <p><span class="keyword">Dados e Infraestrutura:</span> PostgreSQL, MySQL, MongoDB, Modelagem de Dados, ETL</p>
-                <p><span class="keyword">Cloud:</span> GPC, Docker</p>
+                <p><span class="keyword">Cloud:</span> GCP, Docker</p>
                 <p><span class="keyword">Testes e Práticas:</span> Unit tests (JUnit, Mockito), Testes Automatizados, TDD, Logging &amp; Monitoring (Grafana)</p>
             </div>
         </section>
@@ -83,16 +86,12 @@
             <div class="mb-8">
                 <div class="flex justify-between items-start mb-1">
                     <h3 class="text-lg font-bold text-black">Globo</h3>
-                    <span class="text-sm muted">Ago 2025 - o momento</span>
+                    <span class="text-sm muted date">Ago 2025 - o momento</span>
                 </div>
-                <p class="text-gray-700 italic mb-2">Estágio de estratégia e tecnologia — suporte back-end</p>
+                <p class="text-gray-700 italic mb-2">Estagiária de Qualidade</p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                    <li>Apoio na <strong>análise e documentação de regras de negócio</strong> para integrações de vendas e ofertas.</li>
-                    <li>Suporte e manutenção de <strong>APIs</strong> internas, contribuindo para redução média.</li>
-                    <li>Auxílio nos <strong> testes automatizados</strong>, reduzindo regressões em produção.</li>
-                    <li>Investigação e resolução de incidentes, ajudando a diminuir o número de incidentes.</li>
-                    <li>Colaboração em tarefas de configuração e suporte no <strong>Salesforce</strong>.</li>
-                    <li>Aproveitamento do desenvolvimento assistido por <strong>IA (Copilot, Gemini)</strong> para lançar recursos <strong>3 vezes</strong> mais rápido (2 a 3 dias vs. 1 a 2 semanas).</li>
+                    <li>Validei integrações e reduzi regressões em releases elaborando e executando <strong>testes manuais</strong> e implementando <strong>testes automatizados</strong> no pipeline de CI, além de documentar casos de teste e regras de negócio para melhorar rastreabilidade.</li>
+                    <li>Utilizei ferramentas de <strong>IA (Copilot, Gemini)</strong> para acelerar a criação de testes e templates, com foco na qualidade das entregas por meio de execução consistente de testes manuais e automatizados.</li>
                 </ul>
             </div>
 
@@ -100,29 +99,26 @@
             <div class="mb-8">
                 <div class="flex justify-between items-start mb-1">
                     <h3 class="text-lg font-bold text-black">Unilever</h3>
-                    <span class="text-sm muted">Fev 2024 - Dez 2024</span>
+                    <span class="text-sm muted date">Fev 2024 - Dez 2024</span>
                 </div>
                 <p class="text-gray-700 italic mb-2">Estágio em Operações e Performance — suporte a pipelines de dados</p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
                     <li>Criação e otimização de dashboards no <strong>Power BI</strong> e otimização de consultas SQL, reduzindo em média <strong>50% o tempo de geração</strong> dos relatórios.</li>
                     <li>Manutenção e melhoria de pipelines de dados para garantir consistência e disponibilidade dos dados aos stakeholders.</li>
                     <li>Elaboração de relatórios analíticos e automação de rotinas que aumentaram a velocidade de entrega de insights.</li>
-
                 </ul>
             </div>
 
             <!-- Job Espro -->
             <div class="mb-8">
                 <div class="flex justify-between items-start mb-1">
-                    <h3 class="text-lg font-bold text-black">Espro - Unilever</h3>
-                    <span class="text-sm muted">Abr 2023 - Fev 2024</span>
+                    <h3 class="text-lg font-bold text-black">Espro</h3>
+                    <span class="text-sm muted date">Abr 2023 - Fev 2024</span>
                 </div>
                 <p class="text-gray-700 italic mb-2">Jovem Aprendiz — Gestão, Qualidade, Atendimento e Serviço</p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                    <li>Automatização de processos repetitivos utilizando <strong>VBA</strong>, reduzindo o tempo de execução de tarefas em até <strong>60%</strong>.</li>
-                    <li>Criação, formatação e manutenção de planilhas e relatórios de desempenho para suporte analítico.</li>
-                    <li>Desenvolvimento de landing page com <strong>HTML/CSS</strong> para centralizar acesso a links institucionais.</li>
-                    <li>Atualização e estruturação da base de dados de colaboradores, melhorando a precisão das informações.</li>
+                    <li>Automatizei rotinas com <strong>VBA</strong> e organizei a base de dados de colaboradores, reduzindo o tempo gasto em tarefas administrativas e melhorando a precisão das informações.</li>
+                    <li>Desenvolvi uma landing page em <strong>HTML/CSS</strong> e realizei <strong>testes manuais</strong> para validar as automações, resultando em maior eficiência operacional e menor retrabalho.</li>
                 </ul>
             </div>
         </section>
