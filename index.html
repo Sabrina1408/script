@@ -25,9 +25,8 @@
         a { color: inherit; text-decoration: none; font-weight: 400; }
         a:link, a:visited { color: inherit; font-weight: 400; text-decoration: none; }
         @media print {
-            /* Make links visible and show the URL in parentheses */
+            /* Make links visible in print */
             a { color: #0369a1 !important; text-decoration: underline !important; font-weight: 400 !important; -webkit-text-decoration-color: #0369a1; -webkit-print-color-adjust: exact; }
-            a[href]:after { content: " (" attr(href) ")"; color: #6b7280; text-decoration: none; }
             /* Disable ligatures which can cause glyph weight issues in some PDF renderers */
             * { font-variant-ligatures: none !important; font-feature-settings: "liga" 0 !important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
         }
@@ -98,7 +97,7 @@
 
         <!-- Professional Experience -->
         <section class="mb-6">
-            <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-6">EXPERIÊNCIA PROFISSIONAL</h2>
+            <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">EXPERIÊNCIA PROFISSIONAL</h2>
 
             <!-- Job Globo (mantido e adaptado para back-end) -->
             <div class="mb-4">
