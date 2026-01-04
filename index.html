@@ -7,46 +7,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        @page { size: A4; margin: 8mm; }
+        @page { size: A4; margin: 6mm; }
         body {
             font-family: 'Inter', sans-serif;
             background-color: #ffffff;
             color: #000000;
             -webkit-print-color-adjust: exact;
-            font-size: 11px;
-            line-height: 1.15;
+            font-size: 10px;
+            line-height: 1.05;
         }
         .section-number { display: none; }
         .border-gray-custom { border-color: #d1d5db; }
         .muted { color: #6b7280; }
         .keyword { font-weight: 700; color: #000; }
         .no-radius { border-radius: 0 !important; box-shadow: none !important; }
-        .fit-a4 { max-width: 210mm; width: 100%; padding: 8px; }
-        h1 { font-size: 18px; }
-        h2 { font-size: 11px; }
-        .sep { display: inline-block; margin: 0 6px; color: #6b7280; }
-        .date { font-size: 10px; color: #6b7280; }
-        ul.list-disc li { margin-bottom: 4px; }
-        p { margin-bottom: 6px; }
+        /* Links: force normal weight and ensure visibility in print */
+        a { color: inherit; text-decoration: none; font-weight: 400; }
+        a:link, a:visited { color: inherit; font-weight: 400; text-decoration: none; }
         @media print {
-            body { font-size: 10px; line-height: 1.08; }
-            h1 { font-size: 16pt; }
-            h2 { font-size: 10pt; }
-            .sep { display: inline !important; }
-            .date { font-size: 9px; }
-            .fit-a4 { padding: 6px; }
-            ul.list-disc li { margin-bottom: 2px; }
+            /* Make links visible and show the URL in parentheses */
+            a { color: #0369a1 !important; text-decoration: underline !important; font-weight: 400 !important; -webkit-text-decoration-color: #0369a1; -webkit-print-color-adjust: exact; }
+            a[href]:after { content: " (" attr(href) ")"; color: #6b7280; text-decoration: none; }
+            /* Disable ligatures which can cause glyph weight issues in some PDF renderers */
+            * { font-variant-ligatures: none !important; font-feature-settings: "liga" 0 !important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
         }
+        .fit-a4 { max-width: 210mm; width: 100%; padding: 3px; }
+        h1 { font-size: 12px; margin-bottom: 2px; }
+        h2 { font-size: 9px; margin-bottom: 4px; padding-bottom: 2px; }
+        h3 { font-size: 12px;}
+        header { margin-bottom: 4px; }
+        section { margin-bottom: 4px; }
+        .sep { display: inline-block; margin: 0 4px; color: #6b7280; }
+        .date { font-size: 9px; color: #6b7280; }
+        ul.list-disc li { margin-bottom: 3px; font-size: 12px; }
+        p { font-size: 12px; margin-bottom: 4px; }
+        .mb-8 { margin-bottom: 6px !important; }
+        .mb-10 { margin-bottom: 6px !important; }
+        .py-3 { padding-top: 4px !important; padding-bottom: 4px !important; }
+        .mb-4 { margin-bottom: 4px !important; }
+        /* @media print {
+            body { font-size: 9px; line-height: 1.03; }
+            p { font-size: 10px; }
+            h1 { font-size: 14pt; }
+            h2 { font-size: 9pt; }
+            .sep { display: inline !important; }
+            .date { font-size: 8px; }
+            .fit-a4 { padding: 4px; }
+            ul.list-disc li { margin-bottom: 2px; }
+        } */
     </style>
 </head>
 <body class="p-4 md:p-10 flex justify-center">
 
-    <div class="max-w-4xl w-full bg-white p-4 md:p-6  no-radius fit-a4">
+    <div class="max-w-4xl w-full bg-white p-2 md:p-3 no-radius fit-a4">
         
         <!-- Header -->
-        <header class="mb-8 text-center">
+        <header class="mb-4 text-center">
             <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-black mb-1 uppercase text-center">SABRINA ALVES BRITO</h1>
-            <p class="text-base muted italic mb-4 text-center">Estagiária de Qualidade</p>
+            <p class="text-sm muted italic mb-2 text-center">Estagiária de Qualidade</p>
 
             <div class="flex flex-wrap justify-center gap-x-2 gap-y-2 text-sm muted border-b border-gray-custom py-2">
                 <a href="mailto:sabrina.a.brito@gmail.com" class="muted">sabrina.a.brito@gmail.com</a><span class="sep" aria-hidden="true">|</span>
@@ -57,7 +75,7 @@
         </header>
 
         <!-- Professional Summary -->
-        <section class="mb-10">
+        <section class="mb-6">
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">RESUMO PROFISSIONAL</h2>
             <div class="text-gray-700 leading-relaxed space-y-4">
                 <p>
@@ -67,7 +85,7 @@
         </section>
 
         <!-- Technical Skills -->
-        <section class="mb-8">
+        <section class="mb-6">
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">COMPETÊNCIAS TÉCNICAS</h2>
             <div class="text-left space-y-2 text-gray-700">
                 <p><span class="keyword">AI e Dados:</span> RAG (Retrieval-Augmented Generation), Python, Power BI, SQL, ETL, Prompt Engineering</p>
@@ -79,47 +97,37 @@
         </section>
 
         <!-- Professional Experience -->
-        <section class="mb-10">
+        <section class="mb-6">
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-6">EXPERIÊNCIA PROFISSIONAL</h2>
 
             <!-- Job Globo (mantido e adaptado para back-end) -->
-            <div class="mb-8">
+            <div class="mb-4">
                 <div class="flex justify-between items-start mb-1">
                     <h3 class="text-lg font-bold text-black">Globo</h3>
                     <span class="text-sm muted date">Ago 2025 - o momento</span>
                 </div>
-                <p class="text-gray-700 italic mb-2">Estagiária de Qualidade</p>
-                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                    <li>Validei integrações e reduzi regressões em releases elaborando e executando <strong>testes manuais</strong> e implementando <strong>testes automatizados</strong> no pipeline de CI, além de documentar casos de teste e regras de negócio para melhorar rastreabilidade.</li>
-                    <li>Utilizei ferramentas de <strong>IA (Copilot, Gemini)</strong> para acelerar a criação de testes e templates, com foco na qualidade das entregas por meio de execução consistente de testes manuais e automatizados.</li>
-                </ul>
+                <p class="text-gray-700 italic mb-2">Estágio em Qualidade</p>
+                <p class="text-gray-700">Validei integrações e reduzi regressões em releases elaborando e executando <strong>testes manuais</strong> e implementando <strong>testes automatizados</strong> no pipeline de CI, além de documentar casos de teste e regras de negócio para melhorar rastreabilidade. Utilizei ferramentas de <strong>IA (Copilot, Gemini)</strong> para acelerar a criação de testes e templates, com foco na qualidade das entregas por meio de execução consistente de testes manuais e automatizados.</p>
             </div>
 
             <!-- Job Unilever (atualizado com foco back-end) -->
-            <div class="mb-8">
+            <div class="mb-4">
                 <div class="flex justify-between items-start mb-1">
                     <h3 class="text-lg font-bold text-black">Unilever</h3>
                     <span class="text-sm muted date">Fev 2024 - Dez 2024</span>
                 </div>
                 <p class="text-gray-700 italic mb-2">Estágio em Operações e Performance — suporte a pipelines de dados</p>
-                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                    <li>Criação e otimização de dashboards no <strong>Power BI</strong> e otimização de consultas SQL, reduzindo em média <strong>50% o tempo de geração</strong> dos relatórios.</li>
-                    <li>Manutenção e melhoria de pipelines de dados para garantir consistência e disponibilidade dos dados aos stakeholders.</li>
-                    <li>Elaboração de relatórios analíticos e automação de rotinas que aumentaram a velocidade de entrega de insights.</li>
-                </ul>
+                <p class="text-gray-700">Criação e otimização de dashboards no <strong>Power BI</strong> e otimização de consultas SQL, reduzindo em média <strong>50% o tempo de geração</strong> dos relatórios. Manutenção e melhoria de pipelines de dados para garantir consistência e disponibilidade dos dados aos stakeholders. Elaboração de relatórios analíticos e automação de rotinas que aumentaram a velocidade de entrega de insights.</p>
             </div>
 
             <!-- Job Espro -->
-            <div class="mb-8">
+            <div class="mb-4">
                 <div class="flex justify-between items-start mb-1">
-                    <h3 class="text-lg font-bold text-black">Espro</h3>
+                    <h3 class="text-lg font-bold text-black">Espro - Unilever</h3>
                     <span class="text-sm muted date">Abr 2023 - Fev 2024</span>
                 </div>
                 <p class="text-gray-700 italic mb-2">Jovem Aprendiz — Gestão, Qualidade, Atendimento e Serviço</p>
-                <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                    <li>Automatizei rotinas com <strong>VBA</strong> e organizei a base de dados de colaboradores, reduzindo o tempo gasto em tarefas administrativas e melhorando a precisão das informações.</li>
-                    <li>Desenvolvi uma landing page em <strong>HTML/CSS</strong> e realizei <strong>testes manuais</strong> para validar as automações, resultando em maior eficiência operacional e menor retrabalho.</li>
-                </ul>
+                <p class="text-gray-700">Automatizei rotinas com <strong>VBA</strong> e organizei a base de dados de colaboradores, reduzindo o tempo gasto em tarefas administrativas e melhorando a precisão das informações. Desenvolvi uma landing page em <strong>HTML/CSS</strong> e realizei <strong>testes manuais</strong> para validar as automações, resultando em maior eficiência operacional e menor retrabalho.</p>
             </div>
         </section>
 
@@ -127,14 +135,14 @@
         <section>
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">FORMAÇÃO ACADÊMICA</h2>
             <div class="flex justify-between items-start mb-1">
-                <h3 class="text-black font-semibold">Bacharelado em Ciência da Computação</h3>
+                <h3 class="text-black text-sm font-semibold">Bacharelado em Ciência da Computação</h3>
                 <span class="text-sm muted">Fev 2022 - Jun 2026</span>
             </div>
-            <p class="muted text-sm">Universidade Veiga de Almeida</p>
+            <p class="text-gray-700 italic mb-2">Universidade Veiga de Almeida</p>
         </section>
 
         <!-- Languages -->
-        <section class="mt-6">
+        <section class="mt-4">
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">IDIOMAS</h2>
             <div class="text-left text-gray-700">
                 <p><strong>Português:</strong> Nativo</p>
