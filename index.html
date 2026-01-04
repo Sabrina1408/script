@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Roberto Junior</title>
+    <title>Currículo - Sabrina Alves</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
@@ -13,19 +13,21 @@
             background-color: #ffffff;
             color: #000000;
             -webkit-print-color-adjust: exact;
-            font-size: 13px;
-            line-height: 1.25;
+            font-size: 12px;
+            line-height: 1.2;
         }
         .section-number { display: none; }
         .border-gray-custom { border-color: #d1d5db; }
         .muted { color: #6b7280; }
         .keyword { font-weight: 700; color: #000; }
         .no-radius { border-radius: 0 !important; box-shadow: none !important; }
-        .fit-a4 { max-width: 210mm; width: 100%; padding: 18px; }
+        .fit-a4 { max-width: 210mm; width: 100%; padding: 12px; }
+        h1 { font-size: 20px; }
+        h2 { font-size: 12px; }
         @media print {
-            body { font-size: 11px; }
-            h1 { font-size: 18pt; }
-            h2 { font-size: 11pt; }
+            body { font-size: 10px; }
+            h1 { font-size: 16pt; }
+            h2 { font-size: 10pt; }
         }
     </style>
 </head>
@@ -36,11 +38,10 @@
         <!-- Header -->
         <header class="mb-8 text-center">
             <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-black mb-1 uppercase text-center">SABRINA ALVES BRITO</h1>
-            <p class="text-base muted mb-4 text-center">Desenvolvedora Front-End</p>
+            <p class="text-base muted italic mb-4 text-center">Desenvolvedora Back-End</p>
 
             <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm muted border-b border-gray-custom py-3">
-                <span class="flex items-center">Barra Olímpica, Rio de Janeiro, Brasil</span>
-                <span class="hidden md:inline">|</span>
+                <span class="hidden md:inline"></span>
                 <a href="mailto:sabrina.a.brito@gmail.com" class="muted">sabrina.a.brito@gmail.com</a>
                 <span class="hidden md:inline">|</span>
                 <a href="https://www.linkedin.com/in/sabrina-a-brito" class="muted">linkedin.com/in/sabrina-a-brito</a>
@@ -48,8 +49,7 @@
                 <a href="https://github.com/Sabrina1408" class="muted">github.com/Sabrina1408</a>
                 <span class="hidden md:inline">|</span>
                 <a href="https://sabrinaalvesbrito.com.br" class="muted">sabrinaalvesbrito.com.br</a>
-                <span class="hidden md:inline">|</span>
-                <span class="muted">+55 21 97362-3975</span>
+                <span class="hidden md:inline"></span>
             </div>
         </header>
 
@@ -58,7 +58,7 @@
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">RESUMO PROFISSIONAL</h2>
             <div class="text-gray-700 leading-relaxed space-y-4">
                 <p>
-                    <strong>Estudante de Ciência da Computação</strong>, apaixonada por tecnologia e em constante evolução, com foco em <strong>desenvolvimento front-end</strong>. Experiência em criação e otimização de dashboards no <strong>Power BI</strong>, automação de processos com <strong>VBA</strong> e desenvolvimento de páginas com <strong>HTML/CSS</strong>. Busco oportunidades para aplicar e expandir conhecimentos em <strong>React</strong>, <strong>TypeScript</strong> e <strong>JavaScript</strong>.
+                    <strong>Desenvolvedora Back-End</strong> com mais de 5 meses de experiência prática em desenvolvimento de sistemas, automação e operações. Atuação com <strong>Java</strong> (Quarkus), <strong>APIs REST</strong>, bancos de dados SQL, MongoDB e automação de processos. Contribuí para projetos com desenvolvimento além de implementar testes automatizados e melhorias documentação que elevaram a estabilidade do time.
                 </p>
             </div>
         </section>
@@ -67,10 +67,11 @@
         <section class="mb-8">
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">COMPETÊNCIAS TÉCNICAS</h2>
             <div class="text-left space-y-2 text-gray-700">
-                <p><span class="keyword">Front-End:</span> React.js, TypeScript, JavaScript, HTML &amp; CSS, Figma, Prototipagem</p>
-                <p><span class="keyword">Ferramentas e Dados:</span> WordPress, Node.js, Microsoft Power BI, SQL, Microsoft Office</p>
-                <p><span class="keyword">Linguagens de Programação:</span> Python, Java, C</p>
-                <p><span class="keyword">Automação:</span> VBA</p>
+                <p><span class="keyword">AI e Dados:</span> RAG (Retrieval-Augmented Generation), Python, Power BI, SQL, ETL, Prompt Engineering</p>
+                <p><span class="keyword">Linguagens e Frameworks:</span> Java, Spring Boot, Quarkus, Hibernate, Node.js, Express, TypeScript, REST APIs, JPA, </p>
+                <p><span class="keyword">Dados e Infraestrutura:</span> PostgreSQL, MySQL, MongoDB, Modelagem de Dados, ETL</p>
+                <p><span class="keyword">Cloud:</span> GPC, Docker</p>
+                <p><span class="keyword">Testes e Práticas:</span> Unit tests (JUnit, Mockito), Testes Automatizados, TDD, Logging &amp; Monitoring (Grafana)</p>
             </div>
         </section>
 
@@ -78,33 +79,35 @@
         <section class="mb-10">
             <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-6">EXPERIÊNCIA PROFISSIONAL</h2>
 
-            <!-- Job Globo (mantido) -->
+            <!-- Job Globo (mantido e adaptado para back-end) -->
             <div class="mb-8">
                 <div class="flex justify-between items-start mb-1">
                     <h3 class="text-lg font-bold text-black">Globo</h3>
                     <span class="text-sm muted">Ago 2025 - o momento</span>
                 </div>
-                <p class="text-gray-700 italic mb-2">Estágio de estratégia e tecnologia</p>
+                <p class="text-gray-700 italic mb-2">Estágio de estratégia e tecnologia — suporte back-end</p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                    <li>Apoio na <strong>análise e documentação de regras de negócio</strong> relacionadas a vendas, trocas e ofertas.</li>
-                    <li>Auxílio na <strong>automação e execução de testes</strong> para garantir a qualidade da plataforma.</li>
-                    <li>Suporte na <strong>investigação e resolução de incidentes e bugs</strong> na sustentação da plataforma.</li>
-                    <li>Colaboração na <strong>configuração e manutenção</strong> de funcionalidades básicas em Salesforce.</li>
-                    <li>Contribuição para a criação e atualização de <strong>documentos técnicos e funcionais</strong>.</li>
+                    <li>Apoio na <strong>análise e documentação de regras de negócio</strong> para integrações de vendas e ofertas.</li>
+                    <li>Suporte e manutenção de <strong>APIs</strong> internas, contribuindo para redução média.</li>
+                    <li>Auxílio nos <strong> testes automatizados</strong>, reduzindo regressões em produção.</li>
+                    <li>Investigação e resolução de incidentes, ajudando a diminuir o número de incidentes.</li>
+                    <li>Colaboração em tarefas de configuração e suporte no <strong>Salesforce</strong>.</li>
+                    <li>Aproveitamento do desenvolvimento assistido por <strong>IA (Copilot, Gemini)</strong> para lançar recursos <strong>3 vezes</strong> mais rápido (2 a 3 dias vs. 1 a 2 semanas).</li>
                 </ul>
             </div>
 
-            <!-- Job Unilever -->
+            <!-- Job Unilever (atualizado com foco back-end) -->
             <div class="mb-8">
                 <div class="flex justify-between items-start mb-1">
                     <h3 class="text-lg font-bold text-black">Unilever</h3>
                     <span class="text-sm muted">Fev 2024 - Dez 2024</span>
                 </div>
-                <p class="text-gray-700 italic mb-2">Estágio em Operações e Performance</p>
+                <p class="text-gray-700 italic mb-2">Estágio em Operações e Performance — suporte a pipelines de dados</p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                    <li>Criação e otimização de dashboards no <strong>Power BI</strong> para acompanhamento em tempo real dos <strong>KPIs</strong> de operações e trade marketing.</li>
-                    <li>Suporte na estruturação e execução de eventos internos e monitoramento contínuo das ações de <strong>trade marketing</strong>.</li>
-                    <li>Elaboração de relatórios analíticos para subsidiar decisões táticas e melhorias de processo.</li>
+                    <li>Criação e otimização de dashboards no <strong>Power BI</strong> e otimização de consultas SQL, reduzindo em média <strong>50% o tempo de geração</strong> dos relatórios.</li>
+                    <li>Manutenção e melhoria de pipelines de dados para garantir consistência e disponibilidade dos dados aos stakeholders.</li>
+                    <li>Elaboração de relatórios analíticos e automação de rotinas que aumentaram a velocidade de entrega de insights.</li>
+
                 </ul>
             </div>
 
@@ -114,12 +117,12 @@
                     <h3 class="text-lg font-bold text-black">Espro - Unilever</h3>
                     <span class="text-sm muted">Abr 2023 - Fev 2024</span>
                 </div>
-                <p class="text-gray-700 italic mb-2">Jovem Aprendiz - Gestão, Qualidade, Atendimento e Serviço</p>
+                <p class="text-gray-700 italic mb-2">Jovem Aprendiz — Gestão, Qualidade, Atendimento e Serviço</p>
                 <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
-                    <li>Automatização de processos repetitivos utilizando <strong>VBA</strong>, reduzindo tempo de execução de tarefas operacionais.</li>
-                    <li>Criação, formatação e manutenção de planilhas e relatórios de desempenho.</li>
+                    <li>Automatização de processos repetitivos utilizando <strong>VBA</strong>, reduzindo o tempo de execução de tarefas em até <strong>60%</strong>.</li>
+                    <li>Criação, formatação e manutenção de planilhas e relatórios de desempenho para suporte analítico.</li>
                     <li>Desenvolvimento de landing page com <strong>HTML/CSS</strong> para centralizar acesso a links institucionais.</li>
-                    <li>Atualização e estruturação da base de dados de colaboradores.</li>
+                    <li>Atualização e estruturação da base de dados de colaboradores, melhorando a precisão das informações.</li>
                 </ul>
             </div>
         </section>
