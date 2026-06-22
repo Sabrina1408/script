@@ -1,148 +1,119 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Sabrina Alves</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Currículo - Sabrina Alves Brito</title>
     <style>
-        @page { size: A4; margin: 6mm; }
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            margin: 20px;
             color: #000000;
-            -webkit-print-color-adjust: exact;
-            font-size: 10px;
-            line-height: 1.05;
         }
-        .section-number { display: none; }
-        .border-gray-custom { border-color: #d1d5db; }
-        .muted { color: #6b7280; }
-        .keyword { font-weight: 700; color: #000; }
-        .no-radius { border-radius: 0 !important; box-shadow: none !important; }
-        /* Links: force normal weight and ensure visibility in print */
-        a { color: inherit; text-decoration: none; font-weight: 400; }
-        a:link, a:visited { color: inherit; font-weight: 400; text-decoration: none; }
-        @media print {
-            /* Make links visible in print */
-            a { color: #0369a1 !important; text-decoration: underline !important; font-weight: 400 !important; -webkit-text-decoration-color: #0369a1; -webkit-print-color-adjust: exact; }
-            /* Disable ligatures which can cause glyph weight issues in some PDF renderers */
-            * { font-variant-ligatures: none !important; font-feature-settings: "liga" 0 !important; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        h1 {
+            font-size: 18px;
+            margin: 0 0 5px 0;
         }
-        .fit-a4 { max-width: 210mm; width: 100%; padding: 3px; }
-        h1 { font-size: 12px; margin-bottom: 2px; }
-        h2 { font-size: 9px; margin-bottom: 4px; padding-bottom: 2px; }
-        h3 { font-size: 12px;}
-        header { margin-bottom: 4px; }
-        section { margin-bottom: 4px; }
-        .sep { display: inline-block; margin: 0 4px; color: #6b7280; }
-        .date { font-size: 9px; color: #6b7280; }
-        ul.list-disc li { margin-bottom: 3px; font-size: 12px; }
-        p { font-size: 12px; margin-bottom: 4px; }
-        .mb-8 { margin-bottom: 6px !important; }
-        .mb-10 { margin-bottom: 6px !important; }
-        .py-3 { padding-top: 4px !important; padding-bottom: 4px !important; }
-        .mb-4 { margin-bottom: 4px !important; }
+        h2 {
+            font-size: 14px;
+            margin: 15px 0 5px 0;
+            border-bottom: 1px solid #000;
+            padding-bottom: 3px;
+        }
+        h3 {
+            font-size: 12px;
+            margin: 10px 0 3px 0;
+        }
+        p {
+            margin: 5px 0;
+            font-size: 12px;
+        }
+        ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin: 3px 0;
+            font-size: 12px;
+        }
+        .contact {
+            margin: 5px 0;
+            font-size: 12px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
-<body class="p-4 md:p-10 flex justify-center">
+<body>
 
-    <div class="max-w-4xl w-full bg-white p-2 md:p-3 no-radius fit-a4">
-        
-        <!-- Header -->
-        <header class="mb-4 text-center">
-            <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-black mb-1 uppercase text-center">SABRINA ALVES BRITO</h1>
-            <p class="text-sm muted italic mb-2 text-center">Estagiária de Qualidade</p>
+<h1>SABRINA ALVES BRITO</h1>
+<p>Desenvolvedora Java Júnior | Engenheira de Software Backend</p>
 
-            <div class="flex flex-wrap justify-center items-center gap-x-2 gap-y-2 text-sm muted border-b border-gray-custom py-2">
-                <a href="mailto:sabrina.a.brito@gmail.com" class="muted">sabrina.a.brito@gmail.com</a><span class="sep" aria-hidden="true">|</span>
-                <a href="https://www.linkedin.com/in/sabrina-a-brito" class="muted">linkedin.com/in/sabrina-a-brito</a><span class="sep" aria-hidden="true">|</span>
-                <a href="https://github.com/Sabrina1408" class="muted">github.com/Sabrina1408</a><span class="sep" aria-hidden="true">|</span>
-                <a href="https://sabrinaalvesbrito.com.br" class="muted">sabrinaalvesbrito.com.br</a>
-                <span class="sep" aria-hidden="true">|</span>
-                <p class="text-sm muted mb-0">+55 21 97362-3975<span class="sep" aria-hidden="true">|</span>Barra Olímpica, RJ, Brasil</p>
-            </div>
-        </header>
+<div class="contact">
+Email: <a href="mailto:sabrina.a.brito@gmail.com">sabrina.a.brito@gmail.com</a> | LinkedIn: <a href="https://www.linkedin.com/in/sabrina-a-brito">linkedin.com/in/sabrina-a-brito</a> | GitHub: <a href="https://github.com/Sabrina1408">github.com/Sabrina1408</a> | Telefone: +55 21 97362-3975 | Rio de Janeiro, Brasil
+</div>
 
-        <!-- Professional Summary -->
-        <section class="mb-6">
-            <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">RESUMO PROFISSIONAL</h2>
-            <div class="text-gray-700 leading-relaxed space-y-4">
-                <p>
-                    Estudante de Ciência da Computação e <strong>Estagiária de Qualidade</strong> com foco em garantia de qualidade de plataformas e transição para desenvolvimento <strong>Back‑End</strong> (estudo de Java, Spring, Quarkus e Node.js). Experiência prática em criação e execução de <strong>testes manuais</strong> e <strong>testes automatizados</strong>, documentação de regras de negócio, suporte a pipelines de dados e validação de integrações. Busco oportunidades para aplicar práticas de automação de testes, integração contínua e desenvolvimento de APIs com foco na estabilidade e qualidade da plataforma.
-                </p>
-            </div>
-        </section>
+<h2>RESUMO PROFISSIONAL</h2>
+<p>Estudante de Ciência da Computação e Aspirante a Desenvolvedora Backend com sólida base em Garantia de Qualidade. Experiência prática em Java, Spring Boot e desenvolvimento de APIs REST, complementada por atuação em testes automatizados e práticas de CI/CD. Comprometida com a escrita de código limpo, de alta qualidade, e com a colaboração eficaz em equipes multiculturais. Capacidade comprovada de transformar conhecimento acadêmico em soluções práticas e de impacto.</p>
 
-        <!-- Technical Skills -->
-        <section class="mb-6">
-            <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">COMPETÊNCIAS TÉCNICAS</h2>
-            <div class="text-left space-y-2 text-gray-700">
-                <p><span class="keyword">AI e Dados:</span> RAG (Retrieval-Augmented-Generation), Python, Power BI, SQL, ETL, Prompt Engineering</p>
-                <p><span class="keyword">Linguagens e Frameworks:</span> Java, Spring Boot, Quarkus, Hibernate, Node.js, Express, TypeScript, REST APIs, JPA</p>
-                <p><span class="keyword">Dados e Infraestrutura:</span> PostgreSQL, MySQL, MongoDB, Modelagem de Dados, ETL</p>
-                <p><span class="keyword">Cloud:</span> GCP, Docker</p>
-                <p><span class="keyword">Testes e Práticas:</span> Unit tests (JUnit e Mockito), Testes Automatizados, TDD, Logging &amp; Monitoring (Grafana)</p>
-            </div>
-        </section>
+<h2>HABILIDADES TÉCNICAS</h2>
+<ul>
+<li><strong>Linguagens de Programação:</strong> Java (1+ ano), TypeScript, Python</li>
+<li><strong>Frameworks Backend:</strong> Spring Boot, Spring Data JPA, Quarkus, Hibernate, Express.js</li>
+<li><strong>Bancos de Dados:</strong> PostgreSQL, MySQL, MongoDB</li>
+<li><strong>Testes e Qualidade:</strong> JUnit, Mockito, TDD, Testes Unitários, Testes Automatizados, Revisões de Código</li>
+<li><strong>DevOps e Ferramentas:</strong> Docker, Pipelines CI/CD, Git, Grafana, Otimização de Consultas SQL</li>
+<li><strong>Competências Essenciais:</strong> Design de APIs REST, Programação Orientada a Objetos (POO), Elaboração de Aplicações Web</li>
+</ul>
 
-        <!-- Professional Experience -->
-        <section class="mb-6">
-            <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">EXPERIÊNCIA PROFISSIONAL</h2>
+<h2>EXPERIÊNCIA PROFISSIONAL</h2>
 
-            <!-- Job Globo (mantido e adaptado para back-end) -->
-            <div class="mb-4">
-                <div class="flex justify-between items-start mb-1">
-                    <h3 class="text-lg font-bold text-black">Globo</h3>
-                    <span class="text-sm muted date">Ago 2025 - o momento</span>
-                </div>
-                <p class="text-gray-700 italic mb-2">Estágio em Qualidade</p>
-                <p class="text-gray-700">Validei integrações e reduzi regressões em releases elaborando e executando <strong>testes manuais</strong> e implementando <strong>testes automatizados</strong> no pipeline de CI, além de documentar casos de teste e regras de negócio para melhorar rastreabilidade. Utilizei ferramentas de <strong>IA (Copilot e Gemini)</strong> para acelerar a criação de testes e templates, com foco na qualidade das entregas por meio de execução consistente de testes manuais e automatizados.</p>
-            </div>
+<h3>Grupo Globo</h3>
+<p>Estágio em Back-end QA & Desenvolvimento - Ago 2025 até o momento</p>
+<ul>
+<li>Produção de funcionalidades centrais da aplicação e componentes de código reutilizáveis, garantindo 100% de conformidade com padrões rigorosos de segurança e convenções de código limpo.</li>
+<li>Execução de estratégias abrangentes de testes, combinando abordagens manuais e sistematizadas, o que reduziu em 20% os bugs críticos de regressão em produção e melhorou a estabilidade geral do código.</li>
+<li>Sistematização da execução de casos de teste, reduzindo em 60% o esforço de testes manuais e acelerando os ciclos de desenvolvimento.</li>
+<li>Produção de documentação técnica de alta qualidade e mantimento de mais de 1.000 casos de teste, aumentando a rastreabilidade do projeto e reduzindo o tempo de onboarding de novos membros da equipe.</li>
+<li>Colaboração com time de QA, desenvolvimento e produto em 12+ cerimônias de sprint para alinhar a cobertura de testes às prioridades de cards e aos critérios de aceite.</li>
+<li>Investigação de +25 falhas em ambientes de testes, isolando causas-raiz com mais agilidade e ajudando a reduzir defeitos recorrentes entre releases.</li>
+</ul>
 
-            <!-- Job Unilever (atualizado com foco back-end) -->
-            <div class="mb-4">
-                <div class="flex justify-between items-start mb-1">
-                    <h3 class="text-lg font-bold text-black">Unilever</h3>
-                    <span class="text-sm muted date">Fev 2024 - Dez 2024</span>
-                </div>
-                <p class="text-gray-700 italic mb-2">Estágio em Operações e Performance — suporte a pipelines de dados</p>
-                <p class="text-gray-700">Criação e otimização de dashboards no <strong>Power BI</strong> e otimização de consultas SQL, reduzindo em média <strong>50% o tempo de geração</strong> dos relatórios. Manutenção e melhoria de pipelines de dados para garantir consistência e disponibilidade dos dados aos stakeholders. Elaboração de relatórios analíticos e automação de rotinas que aumentaram a velocidade de entrega de insights.</p>
-            </div>
+<h3>Unilever</h3>
+<p>Estágio em Operações e Performance - Fev 2024 até Ago 2024</p>
+<ul>
+<li>Implementação de mais de 2 dashboards interativos em Power BI após otimizar consultas complexas em Excel, o que reduziu em 50% o tempo de geração de relatórios e aprimorou a tomada de decisão orientada por dados.</li>
+<li>Criação de um simulador de preços no Power BI que simplificou em 50% o processo manual de disponibilidade.</li>
+<li>Realização de validação rigorosa de qualidade em mais de 10 integrações de dados e acompanhamento do desempenho, melhorando a confiabilidade das análises em 35%.</li>
+<li>Parceria com 4 analistas de negócios para traduzir necessidades de relatórios em requisitos técnicos, aumentando a clareza e a precisão das entregas de dashboard.</li>
+<li>Registro de +15 ocorrências recorrentes em divergência de dados e etapas de processo, apoiando uma resolução de problemas mais rápida e uma transferência de conhecimento mais consistente dentro da equipe.</li>
+</ul>
 
-            <!-- Job Espro -->
-            <div class="mb-4">
-                <div class="flex justify-between items-start mb-1">
-                    <h3 class="text-lg font-bold text-black">Espro - Unilever</h3>
-                    <span class="text-sm muted date">Abr 2023 - Fev 2024</span>
-                </div>
-                <p class="text-gray-700 italic mb-2">Jovem Aprendiz — Gestão, Qualidade, Atendimento e Serviço</p>
-                <p class="text-gray-700">Automatizei rotinas com <strong>VBA</strong> e organizei a base de dados de colaboradores, reduzindo o tempo gasto em tarefas administrativas e melhorando a precisão das informações. Desenvolvi uma landing page em <strong>HTML/CSS</strong> e realizei <strong>testes manuais</strong> para validar as automações, resultando em maior eficiência operacional e menor retrabalho.</p>
-            </div>
-        </section>
+<h3>Espro - Unilever</h3>
+<p>Jovem Aprendiz - Qualidade, Gestão e Serviço - Abr 2023 até Fev 2024</p>
+<ul>
+<li>Execução de 3 scripts de automação em VBA que reduziram em 50% o tempo de processamento de tarefas administrativas, reduzindo 8+ horas de trabalho manual por semana.</li>
+<li>Produção de uma aplicação web de redirecionamento de links usando HTML, CSS e JavaScript, utilizada por mais de 30 colaboradores por mês para agilizar o acesso a recursos internos.</li>
+<li>Redução de processos de ETL, o que melhorou em 100% a precisão dos dados em 3 bancos de dados diferentes.</li>
+<li>Apoio em +10 atividades rotineiras de manutenção de dados, ajudando a preservar a integridade dos registros operacionais utilizados por múltiplas equipes.</li>
+<li>Elaboração e atualização de +10 documentos de processo para padronizar fluxos de trabalho diários e reduzir a dependência de repasses informais.</li>
+</ul>
 
-        <!-- Education -->
-        <section>
-            <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">FORMAÇÃO ACADÊMICA</h2>
-            <div class="flex justify-between items-start mb-1">
-                <h3 class="text-black text-sm font-semibold">Bacharelado em Ciência da Computação</h3>
-                <span class="text-sm muted">Fev 2022 - Jun 2026</span>
-            </div>
-            <p class="text-gray-700 italic mb-2">Universidade Veiga de Almeida</p>
-        </section>
+<h2>EDUCAÇÃO</h2>
+<h3>Bacharelado em Ciência da Computação</h3>
+<p>Universidade Veiga de Almeida - Fev 2022 até Ago 2026</p>
 
-        <!-- Languages -->
-        <section class="mt-4">
-            <h2 class="text-lg font-bold border-b border-gray-custom pb-2 mb-4">IDIOMAS</h2>
-            <div class="text-left text-gray-700">
-                <p><strong>Português:</strong> Nativo</p>
-                <p><strong>Inglês:</strong> Proficiência profissional</p>
-                <p><strong>Espanhol:</strong> Básico</p>
-            </div>
-        </section>
-
-    </div>
+<h2>IDIOMAS</h2>
+<ul>
+<li>Português: Nativo</li>
+<li>Inglês: Proficiência Profissional Avançada</li>
+<li>Espanhol: Básico</li>
+</ul>
 
 </body>
 </html>
