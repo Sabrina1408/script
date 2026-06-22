@@ -1,0 +1,159 @@
+================================================================================
+                         EMAIL TEMPLATES - CURRÍCULO
+================================================================================
+
+================================================================================
+1. QA ANALYST - INGLÊS
+================================================================================
+
+SUBJECT: QA Analyst Application - Sabrina Alves Brito
+
+BODY:
+Dear Hiring Manager,
+
+I am writing to express my strong interest in the QA Analyst position at your organization. With a solid background in quality assurance, automated testing, and web application testing, combined with my ongoing Bachelor's degree in Computer Science, I am confident I can contribute significantly to your team's quality assurance efforts.
+
+Throughout my professional journey, I have gained hands-on experience in:
+- Designing and executing both manual and automated test cases
+- Implementing automated tests within CI/CD pipelines
+- Identifying and documenting defects with comprehensive test case documentation
+- Collaborating with development teams to ensure high-quality software delivery
+- Working with testing frameworks such as JUnit, Mockito, and REST API testing tools
+
+Most recently, as a Quality Assurance Intern at Grupo Globo, I reduced regression issues by 40% through effective test design and execution. Additionally, my experience at Unilever involved quality validation of data integrations and performance monitoring, which enhanced my understanding of comprehensive quality assurance processes.
+
+I am fluent in English and possess advanced technical skills, including proficiency in Java, Python, and database technologies. I am eager to bring my testing expertise, attention to detail, and commitment to software quality to your organization.
+
+Please find my resume attached for your review. I would welcome the opportunity to discuss how my background and skills align with your team's needs.
+
+Thank you for considering my application.
+
+Best regards,
+Sabrina Alves Brito
++55 21 97362-3975
+sabrina.a.brito@gmail.com
+LinkedIn: linkedin.com/in/sabrina-a-brito
+GitHub: github.com/Sabrina1408
+
+================================================================================
+2. QA ANALYST - PORTUGUÊS
+================================================================================
+
+ASSUNTO: Candidatura para Analista de QA - Sabrina Alves Brito
+
+CORPO:
+Prezados Responsáveis pela Seleção,
+
+Venho por meio desta expressar meu forte interesse na posição de Analista de QA em sua organização. Com uma sólida experiência em garantia de qualidade, testes automatizados e testes de aplicações web, combinada com meu curso de Bacharel em Ciência da Computação em andamento, tenho confiança de que posso contribuir significativamente aos esforços de garantia de qualidade da sua equipe.
+
+Ao longo da minha trajetória profissional, adquiri experiência prática em:
+- Projetar e executar casos de testes manuais e automatizados
+- Implementar testes automatizados em pipelines CI/CD
+- Identificar e documentar defeitos com documentação abrangente de casos de teste
+- Colaborar com equipes de desenvolvimento para garantir entrega de software de alta qualidade
+- Trabalhar com frameworks de testes como JUnit, Mockito e ferramentas de testes de REST API
+
+Recentemente, como Estagiária de Garantia de Qualidade no Grupo Globo, reduzi problemas de regressão em 40% através de design e execução eficaz de testes. Adicionalmente, minha experiência na Unilever envolveu validação de qualidade em integrações de dados e monitoramento de desempenho, o que aprimorou minha compreensão de processos abrangentes de garantia de qualidade.
+
+Possuo proficiência avançada em inglês e habilidades técnicas avançadas, incluindo proficiência em Java, Python e tecnologias de banco de dados. Estou entusiasmada em trazer minha expertise em testes, atenção aos detalhes e compromisso com a qualidade de software para sua organização.
+
+Segue em anexo meu currículo para sua análise. Ficarei feliz em discutir como minha experiência e habilidades se alinham com as necessidades de sua equipe.
+
+Agradeço pela consideração de minha candidatura.
+
+Atenciosamente,
+Sabrina Alves Brito
++55 21 97362-3975
+sabrina.a.brito@gmail.com
+LinkedIn: linkedin.com/in/sabrina-a-brito
+GitHub: github.com/Sabrina1408
+
+================================================================================
+3. BACKEND DEVELOPER - INGLÊS
+================================================================================
+
+SUBJECT: Backend Developer Application - Sabrina Alves Brito
+
+BODY:
+Dear Hiring Manager,
+
+I am writing to express my strong interest in the Backend Developer position at your organization. With a growing background in backend development, RESTful API design, and database management, combined with my ongoing Bachelor's degree in Computer Science, I am excited about the opportunity to contribute to your development team.
+
+Throughout my professional journey, I have gained hands-on experience in:
+- Designing and implementing RESTful APIs using Java and Spring Boot
+- Working with relational and non-relational databases (PostgreSQL, MySQL, MongoDB)
+- Object-Oriented Programming and clean code principles
+- Test-Driven Development and unit testing using JUnit and Mockito
+- CI/CD pipeline integration and Docker containerization
+- Code review practices and adherence to security standards
+
+Most recently, as a Quality Assurance Intern at Grupo Globo, I gained deep insights into backend testing and API validation. My experience at Unilever with data pipeline support and SQL optimization has enhanced my understanding of database design and query performance, while my work with Espro involved automation script development using VBA.
+
+I am proficient in Java, TypeScript, and Python, with strong knowledge of Spring Boot, Quarkus, and Express.js frameworks. I am passionate about writing clean, maintainable code and delivering robust backend solutions that drive business value.
+
+Please find my resume attached for your review. I would welcome the opportunity to discuss how my technical skills and development background align with your team's needs.
+
+Thank you for considering my application.
+
+Best regards,
+Sabrina Alves Brito
++55 21 97362-3975
+sabrina.a.brito@gmail.com
+LinkedIn: linkedin.com/in/sabrina-a-brito
+GitHub: github.com/Sabrina1408
+
+================================================================================
+4. BACKEND DEVELOPER - PORTUGUÊS
+================================================================================
+
+ASSUNTO: Candidatura para Desenvolvedor Backend - Sabrina Alves Brito
+
+CORPO:
+Prezados Responsáveis pela Seleção,
+
+Venho por meio desta expressar meu forte interesse na posição de Desenvolvedor Backend em sua organização. Com experiência crescente em desenvolvimento backend, design de APIs RESTful e gerenciamento de banco de dados, combinada com meu curso de Bacharel em Ciência da Computação em andamento, estou entusiasmado com a oportunidade de contribuir para sua equipe de desenvolvimento.
+
+Ao longo da minha trajetória profissional, adquiri experiência prática em:
+- Projetar e implementar APIs RESTful usando Java e Spring Boot
+- Trabalhar com bancos de dados relacionais e não-relacionais (PostgreSQL, MySQL, MongoDB)
+- Programação Orientada a Objetos e princípios de código limpo
+- Desenvolvimento Dirigido por Testes e testes unitários usando JUnit e Mockito
+- Integração de pipelines CI/CD e containerização com Docker
+- Práticas de revisão de código e aderência aos padrões de segurança
+
+Recentemente, como Estagiária de Garantia de Qualidade no Grupo Globo, adquiri insights profundos em testes backend e validação de APIs. Minha experiência na Unilever com suporte a data pipelines e otimização de SQL aprimorou minha compreensão de design de banco de dados e desempenho de consultas, enquanto meu trabalho na Espro envolveu desenvolvimento de scripts de automação usando VBA.
+
+Possuo proficiência em Java, TypeScript e Python, com sólido conhecimento dos frameworks Spring Boot, Quarkus e Express.js. Sou apaixonada por escrever código limpo e mantível, entregando soluções backend robustas que geram valor comercial.
+
+Segue em anexo meu currículo para sua análise. Ficarei feliz em discutir como minhas habilidades técnicas e experiência em desenvolvimento se alinham com as necessidades de sua equipe.
+
+Agradeço pela consideração de minha candidatura.
+
+Atenciosamente,
+Sabrina Alves Brito
++55 21 97362-3975
+sabrina.a.brito@gmail.com
+LinkedIn: linkedin.com/in/sabrina-a-brito
+GitHub: github.com/Sabrina1408
+
+================================================================================
+DICAS PARA USAR OS TEMPLATES:
+================================================================================
+
+1. Personalize com informações específicas da empresa:
+   - Substitua "Dear Hiring Manager" / "Prezados Responsáveis pela Seleção"
+   - Adicione o nome da empresa no assunto (Subject/Assunto)
+   - Personalize o primeiro parágrafo com informações específicas do cargo
+
+2. Ajustes recomendados:
+   - Mantenha os e-mails concisos (máximo 3-4 parágrafos)
+   - Destaque experiências mais relevantes para a posição
+   - Customizar cada candidatura (não enviar em massa)
+
+3. Antes de enviar:
+   - Verifique a ortografia e gramática
+   - Confirme se os links do LinkedIn e GitHub estão corretos
+   - Certifique-se de que o currículo apropriado está anexado
+   - Respeite as instruções de aplicação da empresa
+
+================================================================================
